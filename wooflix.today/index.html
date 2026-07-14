@@ -1,341 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wooflix - Watch Movies and TV Shows Free Online [Official]</title>
-  <meta name="description" content="Stream unlimited movies and shows with WooFlix—no sign-ups, subscriptions, or fees. Discover how to use WooFlix, compare top alternatives, troubleshoot issues, and stay binge-ready!">
-  <meta name="robots" content="index, follow">
+<!DOCTYPE html><html lang="en"><head>
 
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <meta property="og:image" content="./images/banner.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0a0a">
 
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to top, rgb(43 105 183, 1) 0%, rgb(31 76 132 / 65%) 50%);
-    color: #333;
-    background-color: #22292f;
-  }
-  header {
-    text-align: center;
-    padding: 15px;
-    background: #000000;
-    color: #6668ab;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: x-large;
-  }
-  article {
-    max-width: 800px;
-    margin: auto;
-    padding: 0 15px;
-    color: #fff;
-  }
+<title>WooFlix - Watch Movies, TV Shows Online Free wooflix.today</title>
+<meta name="description" content="WooFlix can mean a legit movie-discovery app—or a risky “free streaming” site. Learn how to spot the real thing, stay safe, and pick alternatives..">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://wooflix.today/">
 
-  img{
-    max-width: 100%;
-    height: auto;
-  }
+<!-- Standard Favicon (Modern Browsers) -->
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon.ico">
+<!-- Apple Touch Icon (iPhone / iPad Home Screen Icon) -->
+<link rel="apple-touch-icon" sizes="192x192" href="images/favicon.ico">
+<!-- Shortcut Favicon (Legacy Browsers & Windows Bookmarks Support) -->
+<link rel="shortcut icon" href="images/favicon.ico">
 
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 2px #000;
-  }
-  footer {
-    background: linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, rgba(0, 0, 0, 0) 100%);
-    border-top: solid 2px rgb(23, 89, 104);
-    text-align: center;
-    color: #fff;
-    padding: 15px;
-    font-size: small;
-  }
-  .buttons {
-    margin: 10%;
-    text-align: center;
-  }
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wooflix.today/">
+<meta property="og:site_name" content="wooflix">
+<meta property="og:title" content="wooflix - Watch Movies, TV Shows Online Free wooflix.today">
+<meta property="og:description" content="WooFlix can mean a legit movie-discovery app—or a risky “free streaming” site. Learn how to spot the real thing, stay safe, and pick alternatives..">
+<meta property="og:image" content="/images/banner-wooflix.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/webp">
 
-  .btn-hover {
-    width: 200px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://wooflix.today/">
+<meta name="twitter:title" content="wooflix - Watch Movies, TV Shows Online Free wooflix.today">
+<meta name="twitter:description" content="WooFlix can mean a legit movie-discovery app—or a risky “free streaming” site. Learn how to spot the real thing, stay safe, and pick alternatives..">
+<meta name="twitter:image" content="https://wooflix.today/images/banner-wooflix.jpg">
 
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "wooflix",
+  "url": "https://wooflix.today/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://wooflix.today/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
+}
+</script>
 
-  .btn-hover:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
+<style>
+.banner-sidebar {
+  position: fixed;
 
-  .btn-hover:focus {
-    outline: none;
-  }
-  .btn-hover.color-9 {
-    background-image: linear-gradient(to right, #007aff, #007aff, #007aff, #007aff);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-    display: flex;
+}
+.banner-sidebar.banner-right {
+    right: 0;
+    left: auto;
     align-items: center;
-    justify-content: center;
-    margin: 15px auto;
-  }
-  article a{
-    color: yellow;
-  }
-  /* CSS for responsive table styling */
-  .table-wrapper {
-    overflow-x: auto; /* Enables horizontal scrolling */
-    margin: 20px 0; /* Adds margin around the table */
-  }
+    box-sizing: border-box;
+    z-index: 100;
+    bottom: 0;
+}
+.banner-ngang {
+  z-index: 100;
+  position: fixed;
+  left: 50%;  
+  transform:translateX(-50%); 
+  bottom: 0;
+  display: flex;
+}
+          </style>
 
-  table {
-    width: 100%; /* Sets the table to full width */
-    border-collapse: collapse; /* Collapses borders for a cleaner look */
-  }
+          <!-- Mobile & PWA Optimizations -->
+          <meta name="mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+          <meta name="apple-mobile-web-app-title" content="wooflix">
 
-  th, td {
-    padding: 12px; /* Adds padding for better spacing */
-    text-align: left; /* Aligns text to the left */
-    border: 1px solid #ddd; /* Adds a light border around cells */
-  }
+          <!-- Performance Optimizations -->
+          <link rel="preconnect" href="https://image.tmdb.org" crossorigin="">
+          <link rel="dns-prefetch" href="https://image.tmdb.org">
 
-  th {
-    background-color: #175968; /* Sets background color for header */
-    color: white; /* Sets text color for header */
-  }
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  'netflix-red': '#E50914',
+                  'netflix-dark': '#141414',
+                  'netflix-gray': '#e5e5e5',
+              // Override default red to the new Orange Theme
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.5s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+      </script>
+      <style>
+      body {
+        background-color: #0a0a0a;
+        color: #fff;
+        -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      /* Mobile safe area spacing */
+      .safe-pb {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      </style>
 
-  tbody tr:nth-child(odd) {
-    background-color: #2f353a; /* Alternates row colors for readability */
-  }
 
-  tbody tr:hover {
-    background-color: #f1f1f1; /* Highlights row on hover */
-  }
-
-  /* Responsive adjustments for small screens */
-  @media screen and (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-      display: block; /* Makes each element a block to stack vertically */
-    }
-
-    thead tr {
-      position: absolute; /* Hides header on small screens */
-      top: -9999px;
-      left: -9999px;
-    }
-
-    tr {
-      margin-bottom: 15px; /* Adds space between rows */
-      border: 1px solid #ddd; /* Adds border to each row */
-    }
-
-    td {
-      border: none; /* Removes border from individual cells */
-      position: relative; 
-      padding-left: 50%; /* Adds padding for labels */
-    }
-
-    td:before {
-      position: absolute;
-      left: 6px;
-      content: attr(data-label); /* Uses data-label attribute for headers in mobile view */
-      font-weight: bold;
-      text-transform: uppercase; /* Makes labels uppercase for emphasis */
-      font-size: xx-small;
-    }
-  }
-
-  blockquote {
-    background-color: #333; 
-    color: #fff; 
-    padding: 20px;
-    border-left: 5px solid #00bcd4; 
-    font-style: italic;
-    font-size: 1.1em;
-    margin: 20px 0;
-    border-radius: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-
-  blockquote p {
-    margin: 0;
-  }
-  
-  </style>
-</head>
-<body>
-  <header>wooflix</header>
-
-  <article>
-
-    <h1>Wooflix - Watch Movies and TV Shows Free on wooflix.net.im</h1>
-
-    <div class="btn-hover color-9" onclick="window.open('https://soap2day1.my/wooflix/', '_blank')">Go to Homepage</div>
+      <link rel="stylesheet" href="/index.css">
+      <script type="importmap">
+      {
+        "imports": {
+          "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom": "https://esm.sh/react-dom@^19.2.3",
+          "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+        }
+      }
+      </script>
+      <script type="module" crossorigin="" src="/js/index-CuUuhySN.js"></script>
+    </head>
+    <body>
+      <div id="root"></div>
     
-    <p>Welcome to your ultimate guide to WooFlix, the free streaming sensation that’s turning heads in 2025. Whether you’re craving the latest blockbuster or a cult-classic midnight thriller, WooFlix lets you hit play—no account, no credit card, no catch. In this guide, we’ll unpack what WooFlix is, how to use it, its standout features, safety considerations, and even compare it with paid services. Ready to level up your binge-watching game? Let’s dive in.</p>
+      <div id="mobile-banner"></div>
 
-    <p style="text-align:center"><img src="./images/banner.jpg" width="800" height="457" alt="Wooflix banner"></p>
+      <div id="desktop-banner"></div>
+
+<script>
+(() => {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+  const cfg = isMobile
+    ? {
+        slotId: "mobile-banner",
+        className: "banner-sidebar banner_wrapper banner-right",
+        key: "dd0e0c80a391a754eae6785c536ab75a",
+        width: 160,
+        height: 300
+      }
+    : {
+        slotId: "desktop-banner",
+        className: "banner-ngang banner_wrapper",
+        key: "b4ecf0b8ad92d7f193599606d24c3567",
+        width: 728,
+        height: 90
+      };
+
+  const slot = document.getElementById(cfg.slotId);
+  if (!slot) return;
+
+  const wrap = document.createElement("div");
+  wrap.className = cfg.className;
+  slot.appendChild(wrap);
+
+  window.atOptions = {
+    key: cfg.key,
+    format: "iframe",
+    height: cfg.height,
+    width: cfg.width,
+    params: {}
+  };
+
+  const s = document.createElement("script");
+  s.type = "text/javascript";
+  s.src = `https://focusameneducation.com/${cfg.key}/invoke.js`;
+  s.async = true;
+  wrap.appendChild(s);
+})();
+</script>
+
+<script>
+        
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        
+        bannerWrappers.forEach(function(bannerWrapper) {
+        
+        var xButton = document.createElement('button');
+
+        
+        xButton.innerHTML = '&times;';
+
+        
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; 
+        xButton.style.right = '-5px'; 
+        xButton.style.padding = '0 5px'; 
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; 
+        xButton.style.color = '#000'; 
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; 
+        xButton.style.lineHeight = '24px'; 
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; 
+
+        
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; 
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; 
+    });
+
     
-    <h2>What Is WooFlix?</h2>
-    <p>At its core, WooFlix is a free, browser-based streaming platform that aggregates movies and TV shows from around the web into a single, user-friendly interface. Accessible via wooflix.tv, it requires no sign-up forms, no email, and no payment details—just find what you want to watch and click play. While its library spans mainstream hits to indie gems, it’s best known for its zero-hassle approach.</p>
+    xButton.addEventListener('click', function() {
+    
+    var iframes = bannerWrapper.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        iframe.style.display = 'none';
+    });
 
-    <h3>Who’s Behind WooFlix?</h3>
-    <p>WooFlix operates as an aggregator rather than a copyright holder. A small team of developers curates links to publicly available streams—think of it as a smart search engine for movies. Because it doesn’t host content directly, it skirts traditional subscription models and often flies under the radar of larger streaming giants.</p>
+    
+    xButton.style.display = 'none';
+    });
 
-    <h3>What Does WooFlix Offer?</h3>
-    <ul>
-      <li>Free Movies &amp; Shows: From recent releases to vintage favorites.</li>
-      <li>HD &amp; Subtitled Streams: Many titles are available in high definition, complete with subtitles.</li>
-      <li>Category Filters: Browse by genre, year, or popularity without clutter.</li>
-    </ul>
 
-    <h3>Why Use WooFlix?</h3>
-    <ul>
-      <li>Cost Savings: Enjoy a full-featured streaming library at zero cost.</li>
-      <li>Instant Access: No waiting for account approvals or promo codes—click and watch.</li>
-      <li>Wide Variety: Indie films and classics often buried on paid platforms can surface here.</li>
-    </ul>
+        
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
 
-    <h2>Key Features of the WooFlix Streaming Platform</h2>
-    <ul>
-      <li>Zero-Registration Model</li>
-      <li>No Advert Pop-ups (ad-blocks often unnecessary)</li>
-      <li>Multiple Server Links for reliability</li>
-      <li>HD &amp; Full HD Streams on many titles</li>
-      <li>Subtitles in Multiple Languages</li>
-      <li>Mobile-Optimized Player for on-the-go streaming</li>
-      <li>Watch Later List to bookmark favorites</li>
-      <li>Dark Mode Interface for late-night binges</li>
-      <li>Search Autocomplete with trending queries</li>
-      <li>Curated New Releases Section</li>
-    </ul>
-    <blockquote>
-      <p>WooFlix’s no-registration model removes all barriers between you and your next movie night—this frictionless UX is what sets it apart from other aggregators.<br/>— Dr. Emily Reed, Media Analyst</p>
-    </blockquote>
 
-    <h2>How to Use WooFlix: A Step-by-Step Guide</h2>
-    <ul>
-      <li>Visit the official WooFlix website at wooflix.tv (or search “WooFlix official site” if redirect issues arise).</li>
-      <li>Allow any on-screen pop-ups related to playback (if necessary).</li>
-      <li>Browse via the main menu: “Movies,” “TV Shows,” or “New Releases.”</li>
-      <li>Filter results by genre or year using the sidebar.</li>
-      <li>Choose a title; click the thumbnail to reveal streaming servers.</li>
-      <li>Pick a server link (usually labeled A, B, or C) and hit “Play.”</li>
-      <li>Adjust quality (720p/1080p) and subtitles via the in-player controls.</li>
-      <li>Bookmark or “heart” your favorites for quick access later.</li>
-    </ul>
 
-    <h2>Comparison with Paid Streaming Alternatives</h2>
-    <p>The following list highlights how WooFlix stacks up against popular paid services:</p>
-    <ul>
-      <li><strong>WooFlix</strong>
-        <ul>
-          <li>Cost: Free</li>
-          <li>Registration: Not required</li>
-          <li>Content Library: Aggregated public streams</li>
-          <li>HD/Full HD Quality: Available on many titles</li>
-          <li>Ads: Minimal to none</li>
-          <li>Platforms: Browser only</li>
-        </ul>
-      </li>
-      <li><strong>Netflix</strong>
-        <ul>
-          <li>Cost: From $6.99/month</li>
-          <li>Registration: Required</li>
-          <li>Content Library: Licensed + Originals</li>
-          <li>HD/Full HD Quality: Yes</li>
-          <li>Ads: No (ad-free tier only)</li>
-          <li>Platforms: Apps and browser</li>
-        </ul>
-      </li>
-      <li><strong>Hulu</strong>
-        <ul>
-          <li>Cost: From $7.99/month</li>
-          <li>Registration: Required</li>
-          <li>Content Library: Licensed + Originals</li>
-          <li>HD/Full HD Quality: Yes</li>
-          <li>Ads: Yes (in basic plan)</li>
-          <li>Platforms: Apps and browser</li>
-        </ul>
-      </li>
-    </ul>
+  </body></html>
 
-    <h2>Is WooFlix Legal and Safe?</h2>
-    <p>Free streaming always carries a grey area. Since WooFlix aggregates links rather than hosting content, it operates in a legal limbo. Many streams point to freely available sources—yet copyright holders may issue takedown notices, leading to occasional domain shifts or server outages.</p>
-    <p>From a safety perspective:</p>
-    <ul>
-      <li>Use an Up-to-Date Browser: Modern browsers block malicious scripts.</li>
-      <li>Enable Ad-Blockers: Though WooFlix is largely ad-free, some mirror sites may inject pop-ups.</li>
-      <li>Consider a VPN: Protect your privacy and avoid geo-restrictions.</li>
-      <li>Scan Links: Hover over and inspect server URLs before clicking.</li>
-    </ul>
-    <blockquote>
-      <p>While free streaming is enticing, always prioritize your digital safety: a reliable VPN and ad-blocker are non-negotiable.<br/>— James Thornton, Streaming Expert</p>
-    </blockquote>
-
-    <h2>Troubleshooting: What to Do When WooFlix Isn’t Working</h2>
-    <ul>
-      <li>Refresh the page and clear your cache.</li>
-      <li>Switch to an alternative server link (Server A, B, or C).</li>
-      <li>Try a different browser (Chrome, Firefox, Edge).</li>
-      <li>Disable ad-blockers temporarily if playback stalls.</li>
-      <li>Check social media or Reddit for real-time outage reports.</li>
-      <li>Use a trusted VPN to bypass geo-blocks.</li>
-      <li>Bookmark the latest mirror URL if the main domain goes down.</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <p>WooFlix has rapidly become a go-to for free streaming aficionados, offering a straightforward, no-hassle way to watch movies and shows online. While it lacks the polish of paid platforms, its zero-signup model and wide content selection make it an unbeatable option for budget-savvy viewers. Just remember to practice safe browsing, keep a VPN handy, and enjoy responsibly. Ready to ditch the subscription? Jump into the world of WooFlix today and transform your movie nights forever.</p>
-    <blockquote>
-      <p>WooFlix proves that you don’t need a wallet-draining subscription to enjoy quality entertainment—its simplicity is its greatest strength.<br/>— Sophia Martinez, Entertainment Journalist</p>
-    </blockquote>
-
-    <h2>Frequently Asked Questions</h2>
-    <h3>How do I watch free movies on WooFlix?</h3>
-    <p>Simply visit wooflix.tv, browse or search for a title, select a server link, and click play—no account, no payment, no hassle.</p>
-
-    <h3>Where can I find the WooFlix catalog?</h3>
-    <p>On the main menu of the WooFlix homepage, click “Catalog” or “All Titles” to explore genres, new releases, and top picks—updated weekly.</p>
-
-    <h3>What happened to WooFlix when it’s down?</h3>
-    <p>WooFlix may face outages due to domain shifts or copyright notices. Check mirror URLs or social channels for the latest working address.</p>
-
-    <h3>Is WooFlix safe and legal to use?</h3>
-    <p>While links point to publicly available streams, always use an ad-blocker and VPN to protect privacy. Legal status is ambiguous since content isn’t hosted directly.</p>
-
-    <h3>Does WooFlix have a mobile app?</h3>
-    <p>Currently, WooFlix is browser-optimized for mobile devices. No official app exists, but you can create a homescreen shortcut on iOS or Android.</p>
-
-    <h3>How often is WooFlix updated?</h3>
-    <p>New links and titles appear weekly, with fresh movies and shows added every Friday to keep your watchlist buzzing.</p>
-
-    <h3>Can I watch WooFlix on my TV?</h3>
-    <p>Yes—use your TV’s browser or cast from your mobile device via Chromecast or AirPlay for big-screen streaming.</p>
-
-    <br>
-    <div class="btn-hover color-9" onclick="window.open('https://soap2day1.my/wooflix/', '_blank')">Go to Homepage</div>
-    <br>
-  </article>
-  <footer>
-    <p>Copyright © 2025 | wooflix</p>
-  </footer>
-</body>
-</html>
