@@ -1,0 +1,21 @@
+name = "wooflix-tmdb"
+main = "worker.js"
+compatibility_date = "2026-09-13"
+
+# Add the IDs from your Cloudflare account before using Wrangler.
+# [[kv_namespaces]]
+# binding = "TMDB_CACHE"
+# id = "YOUR_KV_NAMESPACE_ID"
+
+# [[r2_buckets]]
+# binding = "TMDB_IMAGES"
+# bucket_name = "YOUR_R2_BUCKET_NAME"
+
+# Configure TMDB_KEY and REFRESH_TOKEN as secrets:
+# wrangler secret put TMDB_KEY
+# wrangler secret put REFRESH_TOKEN
+
+# If your Cloudflare/Wrangler setup manages routes from this file:
+# routes = [
+#   { pattern = "wooflix.today/api/*", zone_name = "wooflix.today" }
+# ]
