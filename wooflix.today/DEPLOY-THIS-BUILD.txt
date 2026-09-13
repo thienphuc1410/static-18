@@ -1,0 +1,5 @@
+WooFlix uses Cloudflare Pages Functions exactly like LunaStream.
+NO Worker Route is required.
+Primary backend file: functions/api/[[path]].js
+Configure TMDB_KEY + TMDB_CACHE in the Pages project, then redeploy.
+See PAGES_DEPLOYMENT.md.

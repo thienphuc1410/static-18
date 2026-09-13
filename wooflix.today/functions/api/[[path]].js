@@ -1,5 +1,5 @@
-// WooFlix TMDB V2.1 - Cloudflare Worker
-// Route suggestion: https://your-domain.com/api/*
+// WooFlix TMDB V2.1 - Cloudflare Pages Function
+// Path: /functions/api/[[path]].js
 // Required:
 //   TMDB_KEY   = one TMDB API key
 //   TMDB_CACHE = Cloudflare KV namespace binding
@@ -59,34 +59,31 @@ const FALLBACK_TV = [
   { id: 37854, media_type: "tv", name: "One Piece", first_air_date: "1999-10-20", vote_average: 8.7, poster_path: "/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg", backdrop_path: "/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg", overview: "A pirate crew sails in search of the legendary treasure One Piece." }
 ];
 
-export default {
-  async fetch(request, env, ctx) {
-    const url = new URL(request.url);
+export async function onRequest(context) {
+  const { request, env } = context;
+  const ctx = context;
+  const url = new URL(request.url);
 
-    if (request.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
+  if (request.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
 
-    if (url.pathname === "/api/cache-status") {
-      return json({
-        ok: true,
-        tmdbKey: Boolean(getTmdbKey(env)),
-        kvBinding: Boolean(getKv(env)),
-        r2Images: Boolean(getR2(env)),
-        mode: "KV cache-first, stale-if-error, static fallback, no key rotation",
-        test: "/api/tmdb/trending/all/day?language=en-US&page=1"
-      }, 200, "no-store");
-    }
-
-    if (url.pathname === "/api/refresh-home") return handleHomeRefresh(request, env, ctx, url);
-    if (url.pathname.startsWith("/api/tmdb/")) return handleTmdbApi(request, env, ctx, url);
-    if (url.pathname.startsWith("/api/tmdb-img/")) return handleTmdbImage(request, env, ctx, url);
-
-    return new Response("Not found", { status: 404, headers: corsHeaders() });
-  },
-
-  async scheduled(event, env, ctx) {
-    ctx.waitUntil(refreshHomeCache(env));
+  if (url.pathname === "/api/cache-status") {
+    return json({
+      ok: true,
+      tmdbKey: Boolean(getTmdbKey(env)),
+      kvBinding: Boolean(getKv(env)),
+      r2Images: Boolean(getR2(env)),
+      mode: "KV cache-first, stale-if-error, static fallback, no key rotation",
+      test: "/api/tmdb/trending/all/day?language=en-US&page=1"
+    }, 200, "no-store");
   }
-};
+
+  if (url.pathname === "/api/refresh-home") return handleHomeRefresh(request, env, ctx, url);
+  if (url.pathname.startsWith("/api/tmdb/")) return handleTmdbApi(request, env, ctx, url);
+  if (url.pathname.startsWith("/api/tmdb-img/")) return handleTmdbImage(request, env, ctx, url);
+
+  return new Response("Not found", { status: 404, headers: corsHeaders() });
+}
+
 function corsHeaders(extra = {}) {
   return {
     "Access-Control-Allow-Origin": "*",
